@@ -1,0 +1,41 @@
+$primary: #01354b;
+
+$secondary: #171717;
+$gray: #48d289;
+
+$borderOff: rgba(219, 220, 224, 0.5);
+$offWhiteTrans: rgba(219, 220, 224, 0.3);
+
+body {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  background-image: #ffffff;
+
+  @media (min-width: 500px) {
+    #__next {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .layout {
+      position: relative;
+      width: 720px;
+      border: 0px solid #ffffff;
+      max-height: calc(100vh - 30px);
+
+      * {
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+@import "./helpers.scss";
+@import "./nav.scss";
+@import "./register.scss";
+@import "./dashboard.scss";
+@import "./process.scss";
+@import "./account";

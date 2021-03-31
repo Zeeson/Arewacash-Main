@@ -1,0 +1,31 @@
+{
+  "name": "ArewaPreneurs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 2002",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "export": "next export",
+    "out": "next build && next export",
+    "deploy2": "cross-env NODE_ENV=production firebase deploy --only functions,hosting",
+    "deploy": "firebase deploy --only functions,hosting",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "firebase": "^8.1.2",
+    "firebase-admin": "^9.5.0",
+    "firebase-functions": "^3.13.2",
+    "firebaseui": "^4.7.1",
+    "next": "10.0.3",
+    "next-images": "^1.6.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-input-slider": "^6.0.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-paystack": "^3.0.3",
+    "sass": "^1.30.0",
+    "valtio": "^0.4.1"
+  }
+}
